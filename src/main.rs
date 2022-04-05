@@ -17,7 +17,7 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line");
         // 2.2 Convert the string to a number
-        let guess: u32 = match guess.trim().parse() {
+        let guess: u8 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
         };
