@@ -7,7 +7,7 @@ fn main() {
     // 0. Welcome message
     println!("Welcome to the guessing game! 🎉");
     // 1. Generate a secret number
-    let secret_num = rand::thread_rng().gen_range(0..50);
+    let secret_num = rand::thread_rng().gen_range(0..=50);
     // 2. Loop until the user guesses the secret number
     loop {
         // 2.1 Promp user for a number
